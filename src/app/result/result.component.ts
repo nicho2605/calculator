@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 import {Router} from '@angular/router'
 @Component({
   selector: 'app-result',
@@ -6,12 +7,15 @@ import {Router} from '@angular/router'
   styleUrls: ['./result.component.css']
 })
 export class ResultComponent implements OnInit {
-  constructor(private router:Router){}
-  result(){
-    this.router.navigate(['/home']);
-  }
+  constructor(private appComponent: AppComponent,
+    private router : Router){}
+  Hasil=0;
   ngOnInit() {
-    
+    this.Hasil = this.appComponent.getHasil();
   }
+  back(){
+    this.router.navigate(['../']);
+  }
+
 
 }
