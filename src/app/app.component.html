@@ -1,4 +1,3 @@
-<hello name="{{ name }}"></hello>
 <textarea readonly>{{kiri}} {{Operator}} {{kanan}}</textarea>
 <br>
 <button (click)="Input(7)">7</button> 
@@ -13,9 +12,9 @@
 <button (click)="Input(2)">2</button> 
 <button (click)="Input(3)">3</button> 
 <br>
-<button (click)="InputOpr('+')">+</button> 
-<button (click)="InputOpr('-')">-</button> 
-<button (click)="InputOpr('*')">*</button> 
+<button (click)="InputOperator('+')">+</button> 
+<button (click)="InputOperator('-')">-</button> 
+<button (click)="InputOperator('*')">*</button> 
 <br>
 <button (click)="result()">        =         </button>
 <router-outlet></router-outlet>

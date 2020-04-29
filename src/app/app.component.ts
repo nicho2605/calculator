@@ -27,7 +27,7 @@ export class AppComponent  {
       this.kanan+=x;
     }
   }
-  InputOpr(x){
+  InputOperator(x){
     this.Operator=x;
   }
   count(){
